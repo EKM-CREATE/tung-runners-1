@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tung Runner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="language-select">
+    <h2>Select Language / Dil Seç / Selecciona Idioma</h2>
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('tr')">Türkçe</button>
+    <button onclick="setLanguage('es')">Español</button>
+    <button onclick="setLanguage('it')">Italiano</button>
+    <button onclick="setLanguage('pt')">Português</button>
+    <button onclick="setLanguage('th')">ภาษาไทย</button>
+  </div>
+
+  <div id="character-select" style="display:none;">
+    <h1 data-text="choose">Choose Your Character</h1>
+    <div class="characters">
+      <div class="character">
+        <img src="images/characters/tung-sahuru.png" alt="Tung Sahuru" />
+        <p>Tung Sahuru</p>
+        <button data-text="select">Select</button>
+      </div>
+      <div class="character">
+        <img src="images/characters/cappuccino-assassino.png" alt="Cappuccino Assassino" />
+        <p>Cappuccino Assassino - 1000🍕</p>
+        <button data-text="select">Select</button>
+      </div>
+      <div class="character">
+        <img src="images/characters/ballerina-cappuccina.png" alt="Ballerina Cappuccina" />
+        <p>Ballerina Cappuccina - 95000🍕</p>
+        <button data-text="select">Select</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
